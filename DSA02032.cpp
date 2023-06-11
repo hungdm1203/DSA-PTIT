@@ -8,13 +8,7 @@ set<int> se;
 void Try(int i,int sum,vector<int> v){
 	if(sum>x) return;
 	if(sum==x){
-		int ok=1;
-		for(int i=0;i<v.size();i++){
-			if(se.find(v[i])==se.end()){
-				ok=0;break;
-			}
-		}
-		if(ok) vs.push_back(v);
+		vs.push_back(v);
 		return;
 	}
 	for(int j=i;j<=x;j++){
